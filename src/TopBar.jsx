@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // game name goes here and score
 function TopBar(props) {
 	return (
@@ -10,7 +11,7 @@ function TopBar(props) {
 					</div>
 				</div>
 				<div className="left">
-					<div className="score">Score:{props.score}</div>
+					<div className="score">Score: {props.getScore}</div>
 				</div>
 			</div>
 		</>

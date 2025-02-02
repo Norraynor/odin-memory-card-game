@@ -4,12 +4,12 @@ import TopBar from "./TopBar";
 import Game from "./Game";
 
 function App() {
-	const [count, setCount] = useState(0);
-
+	const [score, setScore] = useState(0);
+	const cardsArray = new Array(10);
 	return (
 		<>
-			<TopBar />
-			<Game />
+			<TopBar getScore={score} />
+			<Game cards={cardsArray} getScore={score} setScore={setScore} />
 		</>
 	);
 }
