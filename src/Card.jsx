@@ -5,7 +5,7 @@ import "./Card.css";
 function Card(props) {
 	return (
 		<>
-			<div className="card" onClick={props.handleClick} pokeID={props.pokeID}>
+			<div className="card" onClick={props.handleClick} pokeid={props.pokeid}>
 				<div className="image">
 					<img src={props.imgUrl} alt={props.name} />
 				</div>

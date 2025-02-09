@@ -5,6 +5,7 @@ import Game from "./Game";
 
 function App() {
 	const [score, setScore] = useState(0);
+	const [bestScore, setBestScore] = useState(0);
 	// const cardsArray = new Array(10);
 	const [imgsLoaded, setImgsLoaded] = useState(false);
 	const pokeArray = [
@@ -85,10 +86,15 @@ function App() {
 			.then(() => setImgsLoaded(true))
 			.catch((err) => console.log("Failed to load images", err));
 	}, []);
+	useEffect(() => {
+		if (score > bestScore) {
+			setBestScore(score);
+		}
+	}, [score]);
 
 	return (
 		<>
-			<TopBar getScore={score} />
+			<TopBar getScore={score} getBestScore={bestScore} />
 			<Game
 				cards={pokeArray}
 				getScore={score}

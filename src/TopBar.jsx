@@ -12,6 +12,7 @@ function TopBar(props) {
 				</div>
 				<div className="left">
 					<div className="score">Score: {props.getScore}</div>
+					<div className="best">Best Score: {props.getBestScore}</div>
 				</div>
 			</div>
 		</>
