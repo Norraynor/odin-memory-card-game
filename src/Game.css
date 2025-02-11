@@ -1,6 +1,13 @@
 .board {
 	display: grid;
-	gap: 8px;
+	gap: 16px;
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: repeat(5, minmax(50px, 1fr));
+}
+
+.game {
+	border: 2px solid black;
+	border-radius: 4px;
+	padding: 24px 16px;
+	background-color: #cc0000;
 }

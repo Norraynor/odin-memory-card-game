@@ -1,12 +1,26 @@
 .card {
 	height: 150px;
-	background-color: brown;
+	background-color: #b3a125;
 	padding: 0;
 	border-radius: 5px;
-	border: 1px solid black;
+	border: 2px solid #3b4cca;
 	pointer-events: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 .image,
 .title {
 	pointer-events: none;
+	padding: 4px 8px;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.spacer {
+	width: 100%;
+	border: 1px solid #3b4cca;
 }

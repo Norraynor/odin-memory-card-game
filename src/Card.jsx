@@ -9,6 +9,7 @@ function Card(props) {
 				<div className="image">
 					<img src={props.imgUrl} alt={props.name} />
 				</div>
+				<div className="spacer"></div>
 				<div className="title">{props.name}</div>
 			</div>
 		</>
